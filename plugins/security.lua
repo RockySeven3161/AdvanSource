@@ -1236,8 +1236,8 @@ end
  --End run function
 return {
 	patterns = {
-"^[!/#](lock) (.*)$",
-"^[!/#](unlock) (.*)$",
+"^([Ll]ock) (.*)$",
+"^([Uu]nlock) (.*)$",
 	},
 	pre_process = pre_process,
 	run = run
