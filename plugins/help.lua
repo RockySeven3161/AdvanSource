@@ -163,7 +163,7 @@ function run(msg, matches)
 	end
 end
 return {
-advan = "http://github.com/janlou/AdvanSource",
-patterns = {"^[!#/](help)$","^[!#/]([Ss]ethelp) (.*)$","^[!#/](delhelp)$"},
+Shahin = "Powered By TelerangerTM",
+patterns = {"^([Hh]elp)$","^([Ss]ethelp) (.*)$","^([Dd]elhelp)$"},
 run = run,
 }
