@@ -527,16 +527,16 @@ return {
 			"info (reply): اطلاعات دیگران",
 			},
 		sudo = {
-			"/info (id) (txt) : اعطای مقام",
-			"/infodel : حذف مقام",
+			"info (id) (txt) : اعطای مقام",
+			"infodel : حذف مقام",
 			},
 		},
 	patterns = {
-		"^(/infodel) (.*)$",
-		"^(/info) ([^%s]+) (.*)$",
-		"^[!#/]([Ii]nfo) (.*)$",
-		"^[!#/](info)$",
-		"^[!#/](Info)$",
+		"^([Ii]nfodel) (.*)$",
+		"^([Ii]nfo) ([^%s]+) (.*)$",
+		"^([Ii]nfo) (.*)$",
+		"^([Ii]nfo)$",
+		"^([Ii]nfo)$",
 	},
 	run = run,
 }
