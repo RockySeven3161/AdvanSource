@@ -1336,7 +1336,7 @@ local function run(msg, matches)
 			if msg.text:match("^(https://telegram.me/joinchat/%S+)$") and data[tostring(msg.to.id)]['settings']['set_link'] == 'waiting' and is_owner(msg) then
 				data[tostring(msg.to.id)]['settings']['set_link'] = msg.text
 				save_data(_config.moderation.data, data)
-				return 'New link set \nPowered by '..team..'\n<a href="'..channel..'">JOIN TO CHANNEL!</a>'
+				return 'New link set \nPowered by EmuxTM\n<a href="'..channel..'">Join @EmuxTM </a>'
 			end
 		end
 
@@ -1348,7 +1348,7 @@ local function run(msg, matches)
 			if not group_link then
 				return "Create a link using /newlink first!\n\nOr if I am not creator use /setlink to set your link"
 			end
-			return 'Group link:\n'..group_link..'\nPowered by '..team..'\n<a href="'..channel..'">JOIN TO CHANNEL!</a>'
+			return 'Group link:\n'..group_link..'\nPowered by EmuxTM\n<a href="'..channel..'">Join @EmuxTM</a>'
 		end
 
 		if matches[1] == "invite" and is_sudo(msg) then
