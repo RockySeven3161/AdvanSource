@@ -42,14 +42,14 @@ end
    end
 
 return {
- advan = {
-   "Created by: @janlou",
-   "Powered by: @AdvanTM",
+Shahin = {
+   "Created by: @GraphicDesigner87654",
+   "Powered by: EmuxTM",
    "CopyRight all right reserved",
  },
  patterns = {
-  "^[!#/]([Ss]etbye) (.*)$",
-  "^[!#/]([Dd]elbye)$",
+  "^([Ss]etbye) (.*)$",
+  "^([Dd]elbye)$",
   "^!!tgservice (chat_del_user)$",
   "^!!tgservice (channel_kick)$",
   "^!!tgservice (kick_user)$",
