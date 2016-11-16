@@ -155,11 +155,11 @@ end
  "CopyRight all right reserved",
  },
  patterns = {
-    "^[!#/](setlang) (fa)$",
-	   "^[!#/](setlang) (en)$",
-	   "^[!#/](setlang) (فا)$",
-	   "^[!#/](lang) (list)$",
-	   "^[!#/](update)$",
+    "^([Ss]etlang) (fa)$",
+	   "^([Ss]etlang) (en)$",
+	   "^([Ss]etlang) (فا)$",
+	   "^([Ll]ang) (list)$",
+	   "^([Uu]pdate)$",
  },
  run = run
 }
