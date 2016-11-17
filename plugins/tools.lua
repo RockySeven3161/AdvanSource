@@ -1,23 +1,3 @@
---Start tools.lua by @janlou
---[[Plugins:
-savefile
-saveplug
-tosticker
-tophoto
-note
-onservice
-setteam
-setsudo
-addsudo
-clean deleted (Thanks to @Blackwolf_admin)
-filter
-hyper & bold & italic & code
-addplug
-delplug
-rmsg
-version
-]]
---Functions:
 local function tophoto(msg, success, result, extra)
   local receiver = get_receiver(msg)
   if success then
@@ -250,14 +230,8 @@ function run(msg, matches)
 			end
     end
        --tosticker && tophoto.
-       --Version:
-	    if matches[1] == "version" then
-	        txt = _config.about_text
-    	    send_msg(get_receiver(msg), txt, ok_cb, false)
-	    end
-	   --Version.
-	   --please put your id here:
-    local sudo_id = 123456789
+       --please put your id here:
+    local sudo_id = 295395556
        --Please put your id here.
 	   --Setsudo:
 	if matches[1]:lower() == "setsudo" then
