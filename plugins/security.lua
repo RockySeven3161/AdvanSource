@@ -1,5 +1,3 @@
---Begin security.lua
---Prerequisite:
 	local function lock_group_media(msg, data, target)
   if not is_momod(msg) then
     return
@@ -1236,11 +1234,11 @@ end
  --End run function
 return {
 	patterns = {
+"^[!/#]([Ll]ock) (.*)$",
+"^[!/#]([Uu]nlock) (.*)$",
 "^([Ll]ock) (.*)$",
 "^([Uu]nlock) (.*)$",
 	},
 	pre_process = pre_process,
 	run = run
 }
---End security.lua
---By @Rondoozle
