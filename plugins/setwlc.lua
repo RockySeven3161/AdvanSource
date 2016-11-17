@@ -49,6 +49,8 @@ return group_welcome
 end
 return {
   patterns = {
+  "^[!/#]([Ss]etwlc) +(.*)$",
+  "^[!/#]([Dd]elwlc)$",
   "^([Ss]etwlc) +(.*)$",
   "^([Dd]elwlc)$",
   "^!!tgservice (chat_add_user)$",
