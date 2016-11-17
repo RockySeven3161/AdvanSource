@@ -1,5 +1,3 @@
---Begin supergrpup.lua
---Check members #Add supergroup
 local function check_member_super(cb_extra, success, result)
   local receiver = cb_extra.receiver
   local data = cb_extra.data
@@ -1295,7 +1293,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 			
-				return "SuperGroup ID for " ..string.gsub(msg.to.print_name, "_", " ").. ":\n\n"..msg.to.id
+				return "SuperGroup Name : \n" ..string.gsub(msg.to.print_name, "_", " ").. "\n___________________\nSuperGroup ID : \n"..msg.to.id
 			end
 		end
 
@@ -1309,7 +1307,7 @@ local function run(msg, matches)
 			local function callback_link (extra , success, result)
 			local receiver = get_receiver(msg)
 				if success == 0 then
-					send_large_msg(receiver, '*Error: Failed to retrieve link* \nReason: Not creator.\n\nIf you have the link, please use /setlink to set it')
+					send_large_msg(receiver, '*Error: Failed to retrieve link* \nReason: Not creator.\n\nIf you have the link, please use setlink to set it')
 					data[tostring(msg.to.id)]['settings']['set_link'] = nil
 					save_data(_config.moderation.data, data)
 				else
@@ -1336,7 +1334,7 @@ local function run(msg, matches)
 			if msg.text:match("^(https://telegram.me/joinchat/%S+)$") and data[tostring(msg.to.id)]['settings']['set_link'] == 'waiting' and is_owner(msg) then
 				data[tostring(msg.to.id)]['settings']['set_link'] = msg.text
 				save_data(_config.moderation.data, data)
-				return 'New link set \nPowered by EmuxTM\n<a href="'..channel..'">Join @EmuxTM </a>'
+				return 'New link set \nPowered by '..team..'\n<a href="'..channel..'">Join To Channel!</a>'
 			end
 		end
 
@@ -1346,9 +1344,9 @@ local function run(msg, matches)
 			end
 			local group_link = data[tostring(msg.to.id)]['settings']['set_link']
 			if not group_link then
-				return "Create a link using /newlink first!\n\nOr if I am not creator use /setlink to set your link"
+				return "Create a link using newlink first!\n\nOr if I am not creator use setlink to set your link"
 			end
-			return 'Group link:\n'..group_link..'\nPowered by EmuxTM\n<a href="'..channel..'">Join @EmuxTM</a>'
+			return 'Group link:\n'..group_link..'\nPowered by '..team..'\n<a href="'..channel..'">Join To Channel!</a>'
 		end
 
 		if matches[1] == "invite" and is_sudo(msg) then
@@ -1911,5 +1909,3 @@ return {
   run = run,
   pre_process = pre_process
 }
---End supergrpup.lua
---By @Rondoozle
