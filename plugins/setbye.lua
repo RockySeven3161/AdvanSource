@@ -48,6 +48,8 @@ Shahin = {
    "CopyRight all right reserved",
  },
  patterns = {
+  "^[!/#]([Ss]etbye) (.*)$",
+  "^[!/#]([Dd]elbye)$",
   "^([Ss]etbye) (.*)$",
   "^([Dd]elbye)$",
   "^!!tgservice (chat_del_user)$",
