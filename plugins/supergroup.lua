@@ -1293,7 +1293,7 @@ local function run(msg, matches)
 				resolve_username(username,  callbackres, cbres_extra)
 			else
 			
-				return "SuperGroup Name : \n" ..string.gsub(msg.to.print_name, "_", " ").. "\n___________________\nSuperGroup ID : \n"..msg.to.id
+				return "🔹SuperGroup Name : \n" ..string.gsub(msg.to.print_name, "_", " ").. "\n🔸SuperGroup ID : \n"..msg.to.id
 			end
 		end
 
