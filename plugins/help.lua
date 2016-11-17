@@ -164,6 +164,6 @@ function run(msg, matches)
 end
 return {
 Shahin = "Powered By TelerangerTM",
-patterns = {"^([Hh]elp)$","^([Ss]ethelp) (.*)$","^([Dd]elhelp)$"},
+patterns = {"^[!/#]([Hh]elp)$","^[!/#]([Ss]ethelp) (.*)$","^[!/#]([Dd]elhelp)$","^([Hh]elp)$","^([Ss]ethelp) (.*)$","^([Dd]elhelp)$"},
 run = run,
 }
