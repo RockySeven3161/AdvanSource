@@ -1677,7 +1677,7 @@ return {
   "^[!/#]([Mm]uteslist)$",
   "^[!/#]([Mm]utelist)$",
   "^[!/#]([Kk]ickinactive)$",
-  "^[!/#]([Kk]ickinactive) (%d+)$",                        G
+  "^[!/#]([Kk]ickinactive) (%d+)$",                        
   "^([Aa]dd)$",
   "^([Aa]dd) (realm)$",
   "^([Rr]em)$",
